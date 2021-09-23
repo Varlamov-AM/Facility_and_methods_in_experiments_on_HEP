@@ -29,8 +29,8 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   G4double scintWidth = 10*cm;
   G4double scintLength = 40*cm;
   G4double scintHeigth = 2*cm;
-  G4double angle = 30*degree;
-  G4double dist = 100*cm;
+  G4double angle = 0*degree;
+  G4double dist = 2*cm;
 
 
   G4Material* air = DefineMaterial("G4_AIR");
@@ -39,14 +39,14 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   //     
   // World
   //
-  G4double world_sizeXY = 20*m;
-  G4double world_sizeZ  = 20*m;
+  G4double world_sizeXY = 2*m;
+  G4double world_sizeZ  = 2*m;
   
   G4Box* solidWorld =    
     new G4Box("World", 0.5*world_sizeXY, 0.5*world_sizeXY, 0.5*world_sizeZ);
       
   G4LogicalVolume* logicWorld =                         
-    new G4LogicalVolume(solidWorld, water, "World");
+    new G4LogicalVolume(solidWorld, air, "World");
                                    
   G4VPhysicalVolume* physWorld = 
     new G4PVPlacement(0,                     
@@ -88,16 +88,6 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   SDman->AddNewDetector(sd2);
   sc1lv->SetSensitiveDetector(sd1);
   sc2lv->SetSensitiveDetector(sd2);
-
-  // Steel ring
-  // G4Tubs* sRing = new G4Tubs("Detector", 24*cm, 24.9*cm, 0.2*cm, 0, 360*deg);
-      
-  // G4LogicalVolume* lRing = new G4LogicalVolume(sRing, Steel12H18N10T, "Ring");
-  
-  // new G4PVPlacement(0, G4ThreeVector(0.,0.,0.),
-  //                   lRing, "Ring", lDet, false,     
-  //                   0, checkOverlaps);
-
 
   return physWorld;
 }

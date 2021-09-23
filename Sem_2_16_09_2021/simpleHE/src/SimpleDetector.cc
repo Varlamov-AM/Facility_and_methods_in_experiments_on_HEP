@@ -31,11 +31,22 @@ G4bool SimpleDetector::ProcessHits(G4Step* step,
   G4double time =  step->GetPostStepPoint()->GetGlobalTime();
   G4int id = step->GetPreStepPoint()->GetTouchableHandle()->GetCopyNumber();
 
+  G4double edep = step->GetTotalEnergyDeposit(); 
+  SimpleRootWriter::GetPointer()->AddEdep1(edep);
+
+  /*
+    if 1:
+    edep1 += edep;
+    if 2:
+    edep2 += edep;
+  */
+
+
   if(pdgcode != 0) return false; // take only optical photons
 
-  SimpleRootWriter::GetPointer()->h1[0]->Fill(id);      
-  SimpleRootWriter::GetPointer()->h1[1]->Fill(energy/eV);      
-  SimpleRootWriter::GetPointer()->h1[2]->Fill(time/microsecond);      
+  //SimpleRootWriter::GetPointer()->h1[0]->Fill(id);      
+  //SimpleRootWriter::GetPointer()->h1[1]->Fill(energy/eV);      
+  //SimpleRootWriter::GetPointer()->h1[2]->Fill(time/microsecond);      
 
   return true;
 }

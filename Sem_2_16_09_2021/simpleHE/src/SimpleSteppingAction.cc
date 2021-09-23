@@ -19,7 +19,7 @@ void SimpleSteppingAction::UserSteppingAction(const G4Step* step)
 
   if (fabs(pdg) == 13 && edep>0) // only muon, edep > 0
   {
-    G4cout << "Pos: " << position << " edep " << edep/MeV << " [MeV]" << G4endl;
+    //G4cout << "Pos: " << position << " edep " << edep/MeV << " [MeV]" << G4endl;
   }
 }
 

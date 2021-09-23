@@ -33,6 +33,8 @@ globals.hh
 ../include/globals.hh
 
 ../include/SimpleRootWriter.hh
+G4Types.hh
+../include/G4Types.hh
 TTree.h
 ../include/TTree.h
 TH1D.h
@@ -45,6 +47,10 @@ TFile.h
 ../include/TFile.h
 string
 -
+iostream
+-
+G4SystemOfUnits.hh
+../include/G4SystemOfUnits.hh
 
 ../include/SimpleSteppingAction.hh
 G4UserSteppingAction.hh
@@ -6529,6 +6535,8 @@ G4Run.hh
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/G4Run.hh
 G4RunManager.hh
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/G4RunManager.hh
+SimpleRootWriter.hh
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.hh
 
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc
 SimpleGeometry.hh

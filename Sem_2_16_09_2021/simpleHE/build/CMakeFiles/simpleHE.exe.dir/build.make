@@ -60,93 +60,93 @@ include CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/simpleHE.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/simpleHE.cc.o: ../simpleHE.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/simpleHE.exe.dir/simpleHE.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/simpleHE.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/simpleHE.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc
 
 CMakeFiles/simpleHE.exe.dir/simpleHE.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/simpleHE.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc > CMakeFiles/simpleHE.exe.dir/simpleHE.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc > CMakeFiles/simpleHE.exe.dir/simpleHE.cc.i
 
 CMakeFiles/simpleHE.exe.dir/simpleHE.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/simpleHE.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc -o CMakeFiles/simpleHE.exe.dir/simpleHE.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/simpleHE.cc -o CMakeFiles/simpleHE.exe.dir/simpleHE.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.o: ../src/SimpleDetector.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleDetector.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleDetector.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.o: ../src/SimpleEventAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleEventAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleEventAction.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.o: ../src/SimpleGeometry.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleGeometry.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleGeometry.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: ../src/SimplePrimaryGeneratorAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimplePrimaryGeneratorAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.o: ../src/SimpleRootWriter.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleRootWriter.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleRootWriter.cc.s
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.o: CMakeFiles/simpleHE.exe.dir/flags.make
 CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.o: ../src/SimpleSteppingAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.o"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.o -c /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.i"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.i
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc > CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.i
 
 CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.s"
-	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.s
+	/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Sem_2_16_09_2021/simpleHE/src/SimpleSteppingAction.cc -o CMakeFiles/simpleHE.exe.dir/src/SimpleSteppingAction.cc.s
 
 # Object files for target simpleHE.exe
 simpleHE_exe_OBJECTS = \

@@ -41,3 +41,4 @@
 /vis/viewer/set/autoRefresh true
 /vis/viewer/refresh
 /vis/verbose warnings
+/vis/viewer/select viewer-0 (OpenGLStoredQt)

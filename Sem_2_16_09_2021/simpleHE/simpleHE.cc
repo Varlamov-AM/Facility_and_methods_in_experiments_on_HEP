@@ -44,9 +44,9 @@ int main(int argc,char** argv)
 
   // Initialize ROOT
   SimpleRootWriter::GetPointer()->Initialize();
-  SimpleRootWriter::GetPointer()->h1[0] = new TH1F("h0","detector id",10,0,10);
-  SimpleRootWriter::GetPointer()->h1[1] = new TH1F("h1","op. photon energy [eV]",100,0,5);
-  SimpleRootWriter::GetPointer()->h1[2] = new TH1F("h2","op photon time [us]",100,0,30);
+  SimpleRootWriter::GetPointer()->h1[0] = new TH1F("edep1","Energy deposition in the first scintillator",100,0,20);
+  //SimpleRootWriter::GetPointer()->h1[1] = new TH1F("h1","op. photon energy [eV]",100,0,5);
+  //SimpleRootWriter::GetPointer()->h1[2] = new TH1F("h2","op photon time [us]",100,0,30);
 
 
 

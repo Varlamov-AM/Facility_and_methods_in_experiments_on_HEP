@@ -31,9 +31,9 @@ SimplePrimaryGeneratorAction::~SimplePrimaryGeneratorAction()
 
 void SimplePrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
 {
-  fParticleGun->SetParticlePosition(G4ThreeVector(0.,0.,0.));
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
-  fParticleGun->SetParticleEnergy(100*MeV);
+  // fParticleGun->SetParticlePosition(G4ThreeVector(0.,0.,0.));
+  // fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.,0.,1.));
+  // fParticleGun->SetParticleEnergy(100*MeV);
 
   fParticleGun->GeneratePrimaryVertex(anEvent);
 }

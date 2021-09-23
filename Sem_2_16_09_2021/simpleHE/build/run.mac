@@ -1,0 +1,7 @@
+/random/setSeeds 1 1
+/gun/particle mu-
+
+/gun/position 0 1 0 m
+/gun/direction 0 -1 0 m
+
+/run/beamOn 10000

@@ -3,6 +3,7 @@
 #include "G4Event.hh"
 #include "G4Run.hh"
 #include "G4RunManager.hh"
+#include "SimpleRootWriter.hh"
 
 SimpleEventAction::SimpleEventAction()
 : G4UserEventAction()
@@ -13,7 +14,12 @@ SimpleEventAction::~SimpleEventAction()
 
 void SimpleEventAction::BeginOfEventAction(const G4Event* event)
 {
-  G4long total = G4RunManager::GetRunManager()->GetCurrentRun()->GetNumberOfEventToBeProcessed();
+  
+  //reset edep1, edep2
+  SimpleRootWriter::GetPointer()->ResetEdep();
+  G4long total = 
+    G4RunManager::GetRunManager()->GetCurrentRun()->
+    GetNumberOfEventToBeProcessed();
   fPrintModulo = G4int(total/20);
   if(fPrintModulo<1) fPrintModulo=1;
 
@@ -23,6 +29,11 @@ void SimpleEventAction::BeginOfEventAction(const G4Event* event)
   }
 }
 
+
+
 void SimpleEventAction::EndOfEventAction(const G4Event*)
-{   
+{
+
+  SimpleRootWriter::GetPointer()->FinalizeEvent();
+   
 }

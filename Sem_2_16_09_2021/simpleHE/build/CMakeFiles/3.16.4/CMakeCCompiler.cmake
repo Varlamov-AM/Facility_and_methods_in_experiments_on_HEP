@@ -1,14 +1,14 @@
-set(CMAKE_C_COMPILER "/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/bin/gcc")
+set(CMAKE_C_COMPILER "/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "4.9.3")
+set(CMAKE_C_COMPILER_VERSION "4.4.7")
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "90")
-set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macros;c_std_11;c_static_assert")
+set(CMAKE_C_COMPILE_FEATURES "c_std_90;c_function_prototypes;c_std_99;c_restrict;c_variadic_macros")
 set(CMAKE_C90_COMPILE_FEATURES "c_std_90;c_function_prototypes")
 set(CMAKE_C99_COMPILE_FEATURES "c_std_99;c_restrict;c_variadic_macros")
-set(CMAKE_C11_COMPILE_FEATURES "c_std_11;c_static_assert")
+set(CMAKE_C11_COMPILE_FEATURES "")
 
 set(CMAKE_C_PLATFORM_ID "Linux")
 set(CMAKE_C_SIMULATE_ID "")
@@ -70,7 +70,7 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed;/usr/local/include;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/include;/usr/include")
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.9.3/include-fixed;/usr/local/include;/usr/lib/gcc/x86_64-redhat-linux/4.4.7/include;/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "gcc;gcc_s;c;gcc;gcc_s")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc/x86_64-unknown-linux-gnu/4.9.3;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib/gcc;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib64;/lib64;/usr/lib64;/cvmfs/sft.cern.ch/lcg/releases/gcc/4.9.3/x86_64-slc6/lib")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-redhat-linux/4.4.7;/usr/lib64;/lib64;/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
