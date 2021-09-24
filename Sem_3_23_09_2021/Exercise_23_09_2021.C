@@ -13,8 +13,10 @@ void Exercise_23_09_2021(){
 
   for (int i = 0; i < 6; i++){
     hists[i] = (TH1F*)files[i]->Get("edep1");
-    TString title = Form("Energy depositio for %d degrees", i);
+    TString title = Form("Energy deposition for %d0 degrees", i);
+    TString name = Form("en_dep_%d", i);
     hists[i]->SetTitle(title.Data());
+    hists[i]->SetName(name.Data());
   }
 
   TCanvas* c1 = new TCanvas("c1", "c1");
@@ -55,7 +57,7 @@ void Exercise_23_09_2021(){
 
   TFile* outfile = new TFile("output.root", "RECREATE");
 
-  for (int i = 0; i++; i < 6){
+  for (int i = 0; i < 6; i++){
     hists[i]->Write();
   }
 
