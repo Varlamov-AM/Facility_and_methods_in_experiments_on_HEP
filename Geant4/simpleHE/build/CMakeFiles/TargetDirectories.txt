@@ -1,0 +1,8 @@
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/install/strip.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/install/local.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/install.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/list_install_components.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/simpleHE.exe.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/rebuild_cache.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/SimpleHE.dir
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/build/CMakeFiles/edit_cache.dir
