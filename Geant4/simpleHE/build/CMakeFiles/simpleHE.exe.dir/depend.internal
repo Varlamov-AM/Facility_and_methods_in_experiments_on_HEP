@@ -1812,8 +1812,11 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4AuxiliaryNavServices.icc
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4BlockingList.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4BlockingList.icc
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4Cache.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4CacheDetails.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4ClassificationOfNewTrack.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DCofThisEvent.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataInterpolation.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataVector.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataVector.icc
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DynamicParticle.hh
@@ -1833,6 +1836,9 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GRSVolume.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GRSVolume.icc
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4Gamma.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSource.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSourceData.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSourceMessenger.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeomSplitter.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4HCofThisEvent.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4IonisParamElm.hh
@@ -1916,7 +1922,12 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RotationMatrix.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RunManager.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RunManagerKernel.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSAngDistribution.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSEneDistribution.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSPosDistribution.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSRandomGenerator.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SandiaTable.hh
+ /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SingleParticleSource.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartTrackStack.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartVoxelHeader.hh
  /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartVoxelHeader.icc

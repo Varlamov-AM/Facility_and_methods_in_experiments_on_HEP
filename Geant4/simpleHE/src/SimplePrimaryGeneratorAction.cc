@@ -11,43 +11,42 @@
 #include "G4Gamma.hh"
 #include "G4MuonMinus.hh"
 #include "TMath.h"
+#include "G4GeneralParticleSource.hh"
 
 
 SimplePrimaryGeneratorAction* SimplePrimaryGeneratorAction::fPtr = 0;
 
 SimplePrimaryGeneratorAction::SimplePrimaryGeneratorAction()
-: G4VUserPrimaryGeneratorAction(), fParticleGun(0)
+  : G4VUserPrimaryGeneratorAction(), fParticleSource(0)//fParticleGun(0)
 {
-  //f = new TF1("f", "TMath::Cos(x)*TMath::Exp(-0.2/TMath::Cos(x))",0 , TMath::Pi()/2);  
-  //rnd = new TRandom3(5);
-  //fPtr = this;
-  fParticleGun  = new G4ParticleGun(1);
-
-  //G4ParticleTable* particleTable = G4ParticleTable::GetParticleTable();
-  //G4ParticleDefinition particle = mu-;
-  //fParticleGun->SetParticleDefinition(particle);
+  fPtr = this;
+  //fParticleGun  = new G4ParticleGun(1);
+  fParticleSource = new G4GeneralParticleSource();
+  fParticleSource->SetParticleDefinition(G4MuonMinus::Definition());
+  fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(500*MeV);
+  //fParticleSource->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(G4ThreeVector(0, 0, -1));
+  fParticleSource->GetCurrentSource()->GetAngDist()->SetAngDistType("cos");
+  //fParticleSource->GetCurrentSource()->GetPosDist()->SetCentreCoords(G4ThreeVector(30*cm, 30*cm, 30*cm));
+  G4SingleParticleSource* test = fParticleSource->GetCurrentSource();
+  G4SPSPosDistribution* testtest = test->GetPosDist();
+  testtest->SetPosDisType("Plane");
+  testtest->SetPosDisShape("Rectangle");
+  testtest->SetCentreCoords(G4ThreeVector(0.*m, 0.*m, 0.5*m));
+  testtest->SetHalfX(30*cm);
+  testtest->SetHalfY(30*cm);
+  testtest->ConfineSourceToVolume(true);
+				     
+  
 }
 
 SimplePrimaryGeneratorAction::~SimplePrimaryGeneratorAction()
 {
-  delete fParticleGun;
+  delete fParticleSource;
 }
 
 void SimplePrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
-{ 
-  //double x = rnd->Uniform(-1,1);
-  //double y = rnd->Uniform(-1,1); 		 
+{
 
-  //double theta = f->GetRandom(0, TMath::Pi()/2);
-  //double fi = 0;//rnd->Uniform(0, 2*TMath::Pi());
-  double mx = TMath::Sin(0.)*TMath::Cos(0.);
-  double my = TMath::Sin(0.)*TMath::Sin(0.);
-  double mz = TMath::Cos(0.);
-  fParticleGun->SetParticlePosition(G4ThreeVector(0,0.15,-1)*CLHEP::m);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mx,my,mz));
-  fParticleGun->SetParticleEnergy(100*MeV);
+  fParticleSource->GeneratePrimaryVertex(anEvent);
 
-  fParticleGun->GeneratePrimaryVertex(anEvent);
-
-  //SimpleRootWriter::GetPointer()->FillTheta(theta);
 }

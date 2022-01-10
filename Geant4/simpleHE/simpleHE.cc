@@ -27,7 +27,7 @@ int main(int argc,char** argv)
 		printf("%s", argv[2]);
     angle = stod(argv[2]);
   } else {
-		angle = 49.;
+		angle = 10.;
 	}
   
   // Construct the default run manager

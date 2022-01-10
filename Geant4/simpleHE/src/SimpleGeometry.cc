@@ -71,6 +71,7 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
  
 	G4RotationMatrix* rot = new G4RotationMatrix();
 	rot->rotateX(fAngle);
+	rot->rotateZ(fAngle);
 
  
   new G4PVPlacement(rot, G4ThreeVector(0.,sin(fAngle),cos(fAngle))*dist/2,

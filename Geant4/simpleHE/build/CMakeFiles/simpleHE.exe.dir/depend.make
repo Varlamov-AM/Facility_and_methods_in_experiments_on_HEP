@@ -1811,8 +1811,11 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.ce
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4AuxiliaryNavServices.icc
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4BlockingList.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4BlockingList.icc
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4Cache.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4CacheDetails.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DCofThisEvent.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataInterpolation.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataVector.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DataVector.icc
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4DynamicParticle.hh
@@ -1832,6 +1835,9 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.ce
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GRSVolume.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GRSVolume.icc
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4Gamma.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSource.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSourceData.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeneralParticleSourceMessenger.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4GeomSplitter.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4HCofThisEvent.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4IonisParamElm.hh
@@ -1915,7 +1921,12 @@ CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.ce
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RotationMatrix.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RunManager.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4RunManagerKernel.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSAngDistribution.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSEneDistribution.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSPosDistribution.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SPSRandomGenerator.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SandiaTable.hh
+CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SingleParticleSource.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartTrackStack.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartVoxelHeader.hh
 CMakeFiles/simpleHE.exe.dir/src/SimplePrimaryGeneratorAction.cc.o: /cvmfs/sft.cern.ch/lcg/releases/Geant4/10.01.p02-81fbd/x86_64-slc6-gcc49-opt/include/Geant4/G4SmartVoxelHeader.icc

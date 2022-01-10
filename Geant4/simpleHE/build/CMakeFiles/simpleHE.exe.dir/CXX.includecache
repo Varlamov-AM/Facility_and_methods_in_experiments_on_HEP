@@ -31,6 +31,8 @@ G4ParticleGun.hh
 ../include/G4ParticleGun.hh
 globals.hh
 ../include/globals.hh
+G4GeneralParticleSource.hh
+../include/G4GeneralParticleSource.hh
 
 ../include/SimpleRootWriter.hh
 G4Types.hh
@@ -6745,6 +6747,8 @@ G4MuonMinus.hh
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/src/G4MuonMinus.hh
 TMath.h
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/src/TMath.h
+G4GeneralParticleSource.hh
+/nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/src/G4GeneralParticleSource.hh
 
 /nfs/lfi.mipt.su/user/v/varlamov/Learning_materials/Facility_and_methods_in_experiments_on_HEP/Geant4/simpleHE/src/SimpleRootWriter.cc
 SimpleRootWriter.hh
