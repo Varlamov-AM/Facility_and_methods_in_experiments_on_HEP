@@ -43,7 +43,7 @@ void SimplePrimaryGeneratorAction::GeneratePrimaries(G4Event* anEvent)
   double mx = TMath::Sin(0.)*TMath::Cos(0.);
   double my = TMath::Sin(0.)*TMath::Sin(0.);
   double mz = TMath::Cos(0.);
-  fParticleGun->SetParticlePosition(G4ThreeVector(0,0,-1)*CLHEP::m);
+  fParticleGun->SetParticlePosition(G4ThreeVector(0,0.15,-1)*CLHEP::m);
   fParticleGun->SetParticleMomentumDirection(G4ThreeVector(mx,my,mz));
   fParticleGun->SetParticleEnergy(100*MeV);
 

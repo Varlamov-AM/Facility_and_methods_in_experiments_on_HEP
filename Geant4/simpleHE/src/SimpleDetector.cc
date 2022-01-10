@@ -29,7 +29,15 @@ G4bool SimpleDetector::ProcessHits(G4Step* step,
 {  
   if (SensitiveDetectorName == "sc1sd") {
 		SimpleRootWriter::GetPointer()->Incr_counter();		
+		SimpleRootWriter::GetPointer()->Scint_1_att(true);	
   }
+	
+	if (SensitiveDetectorName == "sc2sd") {
+		//SimpleRootWriter::GetPointer()->Incr_counter();		
+		SimpleRootWriter::GetPointer()->Scint_2_att(true);	
+  }
+
+
 
   return true;
 }
