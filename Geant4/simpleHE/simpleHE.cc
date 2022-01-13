@@ -22,19 +22,24 @@ int main(int argc,char** argv)
 {
   // Choose the Random engine
   G4Random::setTheEngine(new CLHEP::MTwistEngine);
-	double angle;
+  G4double d;
+  G4double a;
+  G4double angle;
   if (argc > 2){
-		printf("%s", argv[2]);
-    angle = stod(argv[2]);
+    printf("%s", argv[2]);
+    angle = atof(argv[2]);
   } else {
-		angle = 10.;
-	}
+  }
+ 
+  d = 30*cm;
+  a = 30*cm;
+
   
   // Construct the default run manager
   G4RunManager* runManager = new G4RunManager;
 
   // Detector construction
-  runManager->SetUserInitialization(new SimpleGeometry(angle));
+  runManager->SetUserInitialization(new SimpleGeometry(d, a));
 
   // Physics list
   G4VModularPhysicsList* physicsList = new QGSP_BERT;
@@ -43,7 +48,7 @@ int main(int argc,char** argv)
   runManager->SetUserInitialization(physicsList);
     
   // User action initialization
-  runManager->SetUserAction(new SimplePrimaryGeneratorAction);
+  runManager->SetUserAction(new SimplePrimaryGeneratorAction(d, a, angle));
   runManager->SetUserAction(new SimpleEventAction());  
   runManager->SetUserAction(new SimpleSteppingAction());
 

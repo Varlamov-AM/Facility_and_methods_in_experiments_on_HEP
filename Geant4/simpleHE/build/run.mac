@@ -1,14 +1,8 @@
 #/tracking/storeTrajectory 4
 #/tracking/verbose 3
 
-#/random/setSeeds 1 1
-/gun/particle mu-
-/gun/energy 1 GeV
-#/gun/position 0 30 100 cm
-#/gun/direction 0 -1 0 
+/random/setSeeds 1 1
 /run/verbose 0
 /event/verbose 0
 /tracking/verbose 0
-#/gun/particle mu-
-#/gun/energy 1 GeV
-/run/beamOn 100
+/run/beamOn 100000

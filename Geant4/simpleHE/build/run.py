@@ -1,4 +1,3 @@
-
 import os
 
 angleMin = 0.0
@@ -11,7 +10,7 @@ for i in range(nbins):
     command = "./simpleHE.exe run.mac " + str(currAngle);
 #    print(command)
     os.system(command)
-    command = "mv Both_scint_test.root Both_scint_test_"+str(currAngle) + ".root"
+    command = "mv Angle_test.root Angle_test_"+str(currAngle) + ".root"
 #    print(command)
     os.system(command)
 

@@ -16,25 +16,30 @@
 
 SimplePrimaryGeneratorAction* SimplePrimaryGeneratorAction::fPtr = 0;
 
-SimplePrimaryGeneratorAction::SimplePrimaryGeneratorAction()
+SimplePrimaryGeneratorAction::SimplePrimaryGeneratorAction(G4double d, 
+							   G4double a,
+							   G4double angle)
   : G4VUserPrimaryGeneratorAction(), fParticleSource(0)//fParticleGun(0)
 {
   fPtr = this;
   //fParticleGun  = new G4ParticleGun(1);
+  G4double ang = angle*degree;
+  G4double D = 75*cm;
+  G4double A;
+  
+  A = (2 * (a/d) * D);
   fParticleSource = new G4GeneralParticleSource();
   fParticleSource->SetParticleDefinition(G4MuonMinus::Definition());
   fParticleSource->GetCurrentSource()->GetEneDist()->SetMonoEnergy(500*MeV);
-  //fParticleSource->GetCurrentSource()->GetAngDist()->SetParticleMomentumDirection(G4ThreeVector(0, 0, -1));
   fParticleSource->GetCurrentSource()->GetAngDist()->SetAngDistType("cos");
-  //fParticleSource->GetCurrentSource()->GetPosDist()->SetCentreCoords(G4ThreeVector(30*cm, 30*cm, 30*cm));
-  G4SingleParticleSource* test = fParticleSource->GetCurrentSource();
-  G4SPSPosDistribution* testtest = test->GetPosDist();
-  testtest->SetPosDisType("Plane");
-  testtest->SetPosDisShape("Rectangle");
-  testtest->SetCentreCoords(G4ThreeVector(0.*m, 0.*m, 0.5*m));
-  testtest->SetHalfX(30*cm);
-  testtest->SetHalfY(30*cm);
-  testtest->ConfineSourceToVolume(true);
+  fParticleSource->GetCurrentSource()->GetAngDist()->DefineAngRefAxes("angref1", G4ThreeVector(TMath::Cos(ang), 0, TMath::Sin(ang)));
+  fParticleSource->GetCurrentSource()->GetAngDist()->DefineAngRefAxes("angref2", G4ThreeVector(0., 1., 0.));
+  fParticleSource->GetCurrentSource()->GetPosDist()->SetPosDisType("Plane");
+  fParticleSource->GetCurrentSource()->GetPosDist()->SetPosDisShape("Rectangle");
+  fParticleSource->GetCurrentSource()->GetPosDist()->SetCentreCoords(G4ThreeVector(0.*m, 0.*m, D));
+  fParticleSource->GetCurrentSource()->GetPosDist()->SetHalfX(A/2);
+  fParticleSource->GetCurrentSource()->GetPosDist()->SetHalfY(A/2);
+  fParticleSource->GetCurrentSource()->GetPosDist()->ConfineSourceToVolume(true);
 				     
   
 }

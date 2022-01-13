@@ -14,36 +14,36 @@ using namespace CLHEP;
 SimpleDetector::SimpleDetector(const G4String& name) 
   : G4VSensitiveDetector(name)
 {
-    //std::cout << "hello detector " << SensitiveDetectorName << std::endl;
+  //std::cout << "hello detector " << SensitiveDetectorName << std::endl;
 }
 SimpleDetector::~SimpleDetector() 
 {}
 
 void SimpleDetector::Initialize(G4HCofThisEvent* hce)
 {
-
+  
 }
 
 G4bool SimpleDetector::ProcessHits(G4Step* step, 
-                           G4TouchableHistory*)
+				   G4TouchableHistory*)
 {  
   if (SensitiveDetectorName == "sc1sd") {
-		SimpleRootWriter::GetPointer()->Incr_counter();		
-		SimpleRootWriter::GetPointer()->Scint_1_att(true);	
+    SimpleRootWriter::GetPointer()->Incr_counter();		
+    SimpleRootWriter::GetPointer()->Scint_1_att(true);	
   }
-	
-	if (SensitiveDetectorName == "sc2sd") {
-		//SimpleRootWriter::GetPointer()->Incr_counter();		
-		SimpleRootWriter::GetPointer()->Scint_2_att(true);	
+  
+  if (SensitiveDetectorName == "sc2sd") {
+    //SimpleRootWriter::GetPointer()->Incr_counter();		
+    SimpleRootWriter::GetPointer()->Scint_2_att(true);	
   }
-
-
-
+  
+  
+  
   return true;
 }
 
 void SimpleDetector::EndOfEvent(G4HCofThisEvent*)
 {
-
+  
 }
 

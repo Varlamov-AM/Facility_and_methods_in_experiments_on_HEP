@@ -12,11 +12,14 @@
 
 using namespace CLHEP;
 
-SimpleGeometry::SimpleGeometry(double alpha)
+SimpleGeometry::SimpleGeometry(G4double d, G4double a)
 : G4VUserDetectorConstruction(),
   fScoringVolume(0)
 {
-    fAngle = alpha * degree; 
+ 
+  dist = d; 
+  scinLength = a;
+  scinWidth = a;
 
 }
 
@@ -29,22 +32,18 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
 
   G4Material* air = DefineMaterial("G4_AIR");
 
-
-
-  G4double scinLength = 30*cm;
-  G4double scinHeight = 2*cm;
-  G4double scinWidth = 30*cm; 
-  G4double dist = 30*cm;
+  scinHeight = 2*cm;
 
   G4Material* water = DefineMaterial("G4_WATER");
   //     
   // World
   //
-  G4double world_sizeXY =  2*m;
-  G4double world_sizeZ  = 2*m;
+  world_sizeX =  1.5*m;
+  world_sizeY =  1.5*m;
+  world_sizeZ  = 1.5*m;
   
   G4Box* solidWorld =    
-    new G4Box("World", 0.5*world_sizeXY, 0.5*world_sizeXY, 0.5*world_sizeZ);
+    new G4Box("World", 0.5*world_sizeX, 0.5*world_sizeY, 0.5*world_sizeZ);
       
   G4LogicalVolume* logicWorld =                         
     new G4LogicalVolume(solidWorld, air, "World");
@@ -58,52 +57,53 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
                       false,                 
                       0,                     
                       checkOverlaps);        
-
-
+  
+  
   //     
   // Detector
   //  
+  
   G4Box* sc1box = new G4Box("sc1box", scinWidth/2, scinLength/2, scinHeight/2);
   G4Box* sc2box = new G4Box("sc2box", scinWidth/2, scinLength/2, scinHeight/2);
 
   G4LogicalVolume* sc1lv = new G4LogicalVolume(sc1box, water, "sc1lv");
   G4LogicalVolume* sc2lv = new G4LogicalVolume(sc2box, water, "sc2lv");
  
-	G4RotationMatrix* rot = new G4RotationMatrix();
-	rot->rotateX(fAngle);
-	rot->rotateZ(fAngle);
-
+  //G4RotationMatrix* rot = new G4RotationMatrix();
+  //rot->rotateX(fAngle);
+  //rot->rotateZ(fAngle);
+  
  
-  new G4PVPlacement(rot, G4ThreeVector(0.,sin(fAngle),cos(fAngle))*dist/2,
-                    sc1lv, "sc1pv", logicWorld, true,     
-                    0, checkOverlaps);
-  new G4PVPlacement(rot, G4ThreeVector(0.,-sin(fAngle),-cos(fAngle))*dist/2,
-                    sc2lv, "sc2pv", logicWorld, true, 
-                    0, checkOverlaps);
-
+  new G4PVPlacement(0, G4ThreeVector(0.,0.,1.*dist/2),
+		    sc1lv, "sc1pv", logicWorld, true,     
+		    0, checkOverlaps);
+  new G4PVPlacement(0, G4ThreeVector(0.,0.,-1.*dist/2),
+		    sc2lv, "sc2pv", logicWorld, true, 
+		    0, checkOverlaps);
+  
   SimpleDetector* sd1 = new SimpleDetector("sc1sd");
   SimpleDetector* sd2 = new SimpleDetector("sc2sd");
   G4SDManager* SDman = G4SDManager::GetSDMpointer();
   SDman->AddNewDetector(sd1);
   SDman->AddNewDetector(sd2);
   sc1lv->SetSensitiveDetector(sd1);
-  sc2lv->SetSensitiveDetector(sd2)
-;
+  sc2lv->SetSensitiveDetector(sd2);
   return physWorld;
 }
-G4Material* SimpleGeometry::DefineMaterial(G4String material, G4double density)
-{
-    G4int ncomponents,natoms;
-    G4double fractionmass;
-    G4NistManager* nist = G4NistManager::Instance();
+
+G4Material* SimpleGeometry::DefineMaterial(G4String material){
+  
+  G4int ncomponents;
+  G4double fractionmass;
+  G4NistManager* nist = G4NistManager::Instance();
     
-    G4Material* mat = 0;
-    
-    mat = nist->FindOrBuildMaterial(material);
-    if (mat != 0)
-        return mat;
-    
-    if (material == "Steel12H18N10T")
+  G4Material* mat = 0;
+  
+  mat = nist->FindOrBuildMaterial(material);
+  if (mat != 0)
+    return mat;
+  
+  if (material == "Steel12H18N10T")
     {
       G4Element* Fe = nist->FindOrBuildElement("Fe");
       G4Element* Ni = nist->FindOrBuildElement("Ni");
@@ -115,11 +115,11 @@ G4Material* SimpleGeometry::DefineMaterial(G4String material, G4double density)
       mat->AddElement(Cr, fractionmass=19*perCent);
       mat->AddElement(Mn, fractionmass=2*perCent);
     }
-    else
+  else
     {
-        G4cerr << "Unknown material: " << material << G4endl;
+      G4cerr << "Unknown material: " << material << G4endl;
     }
-    return mat;
+  return mat;
 }
 
 
