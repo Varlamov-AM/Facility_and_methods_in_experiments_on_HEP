@@ -25,13 +25,24 @@ int main(int argc,char** argv)
   G4double d;
   G4double a;
   G4double angle;
-  if (argc > 2){
+
+  printf("%d", argc);
+
+  if (argc == 3){
     printf("%s", argv[2]);
     angle = atof(argv[2]);
-  } else {
+    d = 30*cm;
+  }
+  if (argc == 4){
+    printf("Angle: %s\n", argv[2]);
+    printf("Distance: %s\n", argv[3]);
+    angle = atof(argv[2]);
+    d = (atof(argv[3]));
+  }
+  else {
+    d = 59*cm;
   }
  
-  d = 30*cm;
   a = 30*cm;
 
   

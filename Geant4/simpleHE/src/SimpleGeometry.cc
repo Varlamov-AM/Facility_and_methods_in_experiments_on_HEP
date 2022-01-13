@@ -18,6 +18,7 @@ SimpleGeometry::SimpleGeometry(G4double d, G4double a)
 {
  
   dist = d; 
+  printf("%5.3f", dist);
   scinLength = a;
   scinWidth = a;
 
@@ -69,15 +70,16 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   G4LogicalVolume* sc1lv = new G4LogicalVolume(sc1box, water, "sc1lv");
   G4LogicalVolume* sc2lv = new G4LogicalVolume(sc2box, water, "sc2lv");
  
-  //G4RotationMatrix* rot = new G4RotationMatrix();
-  //rot->rotateX(fAngle);
+  G4RotationMatrix* rot = new G4RotationMatrix();
+  G4double ang = 0*degree;
+  rot->rotateY(ang);
   //rot->rotateZ(fAngle);
   
  
-  new G4PVPlacement(0, G4ThreeVector(0.,0.,1.*dist/2),
+  new G4PVPlacement(rot, G4ThreeVector(-sin(ang)*dist/2,0.,cos(ang)*dist/2),
 		    sc1lv, "sc1pv", logicWorld, true,     
 		    0, checkOverlaps);
-  new G4PVPlacement(0, G4ThreeVector(0.,0.,-1.*dist/2),
+  new G4PVPlacement(rot, G4ThreeVector(sin(ang)*dist/2,0.,-cos(ang)*dist/2),
 		    sc2lv, "sc2pv", logicWorld, true, 
 		    0, checkOverlaps);
   
