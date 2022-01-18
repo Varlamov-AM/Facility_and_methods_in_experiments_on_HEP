@@ -27,13 +27,11 @@ void SimpleDetector::Initialize(G4HCofThisEvent* hce)
 G4bool SimpleDetector::ProcessHits(G4Step* step, 
 				   G4TouchableHistory*)
 {  
-  if (SensitiveDetectorName == "sc1sd") {
-    SimpleRootWriter::GetPointer()->Incr_counter();		
+  if (SensitiveDetectorName == "sc1sd") {		
     SimpleRootWriter::GetPointer()->Scint_1_att(true);	
   }
   
-  if (SensitiveDetectorName == "sc2sd") {
-    //SimpleRootWriter::GetPointer()->Incr_counter();		
+  if (SensitiveDetectorName == "sc2sd") {		
     SimpleRootWriter::GetPointer()->Scint_2_att(true);	
   }
   

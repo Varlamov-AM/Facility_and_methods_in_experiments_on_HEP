@@ -11,7 +11,7 @@ class G4Material;
 class SimpleGeometry : public G4VUserDetectorConstruction
 {
   public:
-  SimpleGeometry(G4double, G4double);
+  SimpleGeometry(G4double, G4double, G4double);
   virtual ~SimpleGeometry();
   
   virtual G4VPhysicalVolume* Construct();

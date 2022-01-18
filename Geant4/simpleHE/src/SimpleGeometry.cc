@@ -12,12 +12,13 @@
 
 using namespace CLHEP;
 
-SimpleGeometry::SimpleGeometry(G4double d, G4double a)
+SimpleGeometry::SimpleGeometry(G4double d, G4double a, G4double angle)
 : G4VUserDetectorConstruction(),
   fScoringVolume(0)
 {
  
   dist = d; 
+  fAngle = angle;
   printf("%5.3f", dist);
   scinLength = a;
   scinWidth = a;
@@ -39,9 +40,9 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   //     
   // World
   //
-  world_sizeX =  1.5*m;
-  world_sizeY =  1.5*m;
-  world_sizeZ  = 1.5*m;
+  world_sizeX =  2.5*m;
+  world_sizeY =  2.5*m;
+  world_sizeZ  = 2.5*m;
   
   G4Box* solidWorld =    
     new G4Box("World", 0.5*world_sizeX, 0.5*world_sizeY, 0.5*world_sizeZ);
@@ -71,9 +72,8 @@ G4VPhysicalVolume* SimpleGeometry::Construct()
   G4LogicalVolume* sc2lv = new G4LogicalVolume(sc2box, water, "sc2lv");
  
   G4RotationMatrix* rot = new G4RotationMatrix();
-  G4double ang = 0*degree;
+  G4double ang = fAngle * degree;
   rot->rotateY(ang);
-  //rot->rotateZ(fAngle);
   
  
   new G4PVPlacement(rot, G4ThreeVector(-sin(ang)*dist/2,0.,cos(ang)*dist/2),

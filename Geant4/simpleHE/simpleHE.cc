@@ -40,7 +40,8 @@ int main(int argc,char** argv)
     d = (atof(argv[3]));
   }
   else {
-    d = 59*cm;
+    angle = 30;
+    d = 30*cm;
   }
  
   a = 30*cm;
@@ -50,7 +51,7 @@ int main(int argc,char** argv)
   G4RunManager* runManager = new G4RunManager;
 
   // Detector construction
-  runManager->SetUserInitialization(new SimpleGeometry(d, a));
+  runManager->SetUserInitialization(new SimpleGeometry(d, a, angle));
 
   // Physics list
   G4VModularPhysicsList* physicsList = new QGSP_BERT;
@@ -59,7 +60,7 @@ int main(int argc,char** argv)
   runManager->SetUserInitialization(physicsList);
     
   // User action initialization
-  runManager->SetUserAction(new SimplePrimaryGeneratorAction(d, a, angle));
+  runManager->SetUserAction(new SimplePrimaryGeneratorAction(angle));
   runManager->SetUserAction(new SimpleEventAction());  
   runManager->SetUserAction(new SimpleSteppingAction());
 
